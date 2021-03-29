@@ -12,7 +12,7 @@ public class Skill extends AbstractEntity {
     @NotBlank
     @Size(max=1000)
     private String description;
-
+// Added a jobs field with ManyToMany
     @ManyToMany(mappedBy = "skills")
     private List<Job> jobs;
 

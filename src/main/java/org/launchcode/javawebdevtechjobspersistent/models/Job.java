@@ -37,7 +37,7 @@ public class Job extends AbstractEntity{
         return employer;
     }
 
-    public void setEmployer(String employer) {
+    public void setEmployer(Employer employer) {
         this.employer = employer;
     }
 
