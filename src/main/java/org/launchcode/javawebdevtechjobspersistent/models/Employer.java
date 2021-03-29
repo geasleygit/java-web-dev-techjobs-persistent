@@ -14,7 +14,7 @@ public class Employer extends AbstractEntity {
     @NotBlank
     @Size(min=3, max=50)
     private String location;
-
+// Added jobs Field and initialized it to empty ArrayList
     @OneToMany
     @JoinColumn
     private List<Job> jobs = new ArrayList<>();
