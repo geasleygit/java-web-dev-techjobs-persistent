@@ -4,17 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Skill extends AbstractEntity {
 
     @NotBlank
-    @Size(max=1000)
+    @Size(max=150)
     private String description;
 // Added a jobs field with ManyToMany
     @ManyToMany(mappedBy = "skills")
-    private List<Job> jobs;
+    private List<Job> jobs = new ArrayList<>();
 
     public String getDescription() {
         return description;

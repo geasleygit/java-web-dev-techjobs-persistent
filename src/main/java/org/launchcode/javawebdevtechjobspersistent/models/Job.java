@@ -16,11 +16,8 @@ public class Job extends AbstractEntity{
     //@Id
     //@GeneratedValue
     //private int id;
-
     //private String name;
-
     //private String employer;
-
     //private List<Skill> skills;
 
     public Job() {

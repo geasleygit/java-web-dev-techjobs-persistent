@@ -1,8 +1,8 @@
 ## Part 1: Test it with SQL
-id - int
-employer - varchar
-name - varchar
-skills - varchar
+int id
+varchar employer
+varchar name
+varchar skills
 
 ## Part 2: Test it with SQL
 SELECT name
